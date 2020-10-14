@@ -1,0 +1,10 @@
+visualRecon(){
+   mkdir "$1"_visual && cd "$1"_visual
+   python3 /opt/tools/Sublist3r/sublist3r.py -d $1 -t 20 -v -o subs.txt
+   assetfinder --subs-only $1 --threads 20 >> subs.txt
+   cat subs.txt | sort -u -o subs.txt
+   cat subs.txt | httprobe | tee live.txt | aquatone
+   cd ..
+   notify-send hello
+   firefox "$1"_visual/aquatone_report.html
+ }
