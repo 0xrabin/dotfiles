@@ -1,0 +1,7 @@
+alias nc="ncat"
+alias myip="curl checkip.amazonaws.com"
+alias python="python3"
+alias htop="htop -t"
+alias starttor="sudo service tor start"
+alias xclip="xclip -selection clipboard"
+alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
