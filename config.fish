@@ -1,14 +1,3 @@
-abbr -a -U -- htop 'htop -t'
-abbr -a -U -- myip 'curl checkip.amazonaws.com'
-abbr -a -U -- nc ncat
-abbr -a -U -- psg 'ps aux | grep -v grep | grep -i -e VSZ -e'
-abbr -a -U -- starttor 'sudo service tor start'
-abbr -a -U -- wget 'wget -c'
-abbr -a -U -- www 'python3 -m http.server 1337'
-abbr -a -U -- xclip 'xclip -selection clipboard'
-
-
-
 function bind_bang
     switch (commandline -t)[-1]
         case "!"
